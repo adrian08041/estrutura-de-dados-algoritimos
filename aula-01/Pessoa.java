@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Pessoa {
 
     private String nome;
@@ -56,7 +58,7 @@ public class Pessoa {
     return " Nome: "  + getNome() + " idade: "  + getIdade() + " cpf : "  + getCpf(); 
   }
 
-
+ 
 
  }
 
