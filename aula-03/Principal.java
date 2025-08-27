@@ -9,6 +9,8 @@ public class Principal {
         lista.addInicio("Fulano");
         lista.addFinal("Daniel");
         lista.imprimeLista();
+        lista.removerInicio();
+        lista.removeFinal();
     }
 }
 

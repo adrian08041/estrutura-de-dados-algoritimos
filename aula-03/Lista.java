@@ -51,4 +51,36 @@ public class Lista <T>{
             ultimoNo = novoNo;       
         }
     }
+
+    public void removerInicio(){
+        if(primeiroNo == null){
+            System.out.println("lista vazia");
+        } else{
+            System.out.println("dado"+ primeiroNo.getDado() + "removido.");
+            if(primeiroNo == ultimoNo){
+                primeiroNo = null;
+                ultimoNo = null;
+            }else{
+                primeiroNo = primeiroNo.getNextNO();
+            }
+            
+
+        }
+    }
+
+    public void removeFinal(){
+        if(ultimoNo == null){
+            System.out.println("lista vazia");
+        } else{
+            System.out.println("dado"+ ultimoNo.getDado() + "removido.");
+            No<T> aux = primeiroNo;
+             while (aux.getNextNO() != ultimoNo ) {
+               aux = aux.getNextNO();
+            }
+            ultimoNo = aux;
+            aux.setNextNo(null);
+            
+                
+        }
+    }   
 }
