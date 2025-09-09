@@ -1,3 +1,5 @@
+import pilha.No;
+
 public class Pilha<T> {
 
     private No<T> topo;

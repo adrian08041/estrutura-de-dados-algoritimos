@@ -1,4 +1,6 @@
- class No <T> {
+import pilha.No;
+
+class No <T> {
     private T dado;
     private No<T> nextNo;
 

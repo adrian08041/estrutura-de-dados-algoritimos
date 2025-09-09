@@ -1,3 +1,5 @@
+import pilha.No;
+
 public class Lista <T>{
 
     private String nomeLista;
