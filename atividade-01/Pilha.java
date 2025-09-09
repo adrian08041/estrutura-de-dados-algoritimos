@@ -1,0 +1,53 @@
+public class Pilha<T> {
+
+    // atributos ou estado da pilha
+
+    private No<T> topo;
+    private String nomePilha;
+
+    // construtores
+
+    public Pilha() {
+        this("");
+    }
+
+    public Pilha(String nomePilha) {
+        this.nomePilha = nomePilha;
+        this.topo = null;
+    }
+
+    // operacao para empilhar (push)
+    public void push(T dado) {
+        No<T> novoNo = new No<T>(dado);
+
+        // se a pilha estiver vazia o novoNo vira topo
+        // caso contrario atualiza o topo para novoNo
+        if (topo == null) {
+            topo = novoNo;
+
+        } else {
+            novoNo.setNextNo(topo);
+            topo = novoNo;
+        }
+    }
+
+    public void imprimePilha() {
+        No<T> aux = topo;
+        while (aux != null) {
+            System.out.println(aux.getDado());
+            aux = aux.getNextNo();
+        }
+    }
+
+    public T pop() {
+        if (topo == null) {
+            System.out.println("lista vazia");
+            return null;
+
+        } else {
+            T dadoTemp = topo.getDado();
+            topo = topo.getNextNo();
+            return dadoTemp;
+        }
+    }
+}
