@@ -1,4 +1,6 @@
+import No;
 
+package pilha;
 class No<T> {
     private T dado;
     private No<T> nextNo;

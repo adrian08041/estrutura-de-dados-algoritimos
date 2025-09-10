@@ -1,6 +1,6 @@
 
 
-public class Fila {
+public class Fila <T>{
 
     private ArrayList<String> nomeAlunos;
 

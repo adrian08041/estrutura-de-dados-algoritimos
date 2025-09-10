@@ -1,4 +1,4 @@
-import pilha.Pilha;
+
 
 public class Principal {
 
@@ -12,5 +12,7 @@ public class Principal {
 
         System.out.println("Dado" + pilha.pop() + "removido");
         pilha.imprimePilha();
+
+        System.out.println( "Esse ésta no topo " + pilha.peek());
     }
 }

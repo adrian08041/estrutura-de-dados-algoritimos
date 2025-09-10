@@ -1,4 +1,4 @@
-import pilha.No;
+
 
 public class Pilha<T> {
 
@@ -25,6 +25,17 @@ public class Pilha<T> {
            topo = novoNo;
         }
     }
+
+    public T peek(){
+        if (topo==null) {
+            System.out.println("lista vazia");
+            return null;
+            }else{
+                return topo.getDado();
+            }
+    }
+
+
 
     public T pop(){
         if (topo==null) {
