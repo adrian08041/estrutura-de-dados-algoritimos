@@ -6,7 +6,10 @@ public class Principal {
         lista.addInicio("Miguel");
         lista.addFinal("asdfas");
 
-
+        lista.imprimeLista();
+        lista.removeInicio();
+        lista.imprimeLista();
+        lista.removeFinal();
             
     }
 }

@@ -4,9 +4,9 @@ public class NoDuplo<T>{
     private NoDuplo<T> anteriorNo;
     private int indice;
 
-    public NoDuplo(T dado, int indice){
+    public NoDuplo(T dado){
         this.dado = dado;
-        this.indice = indice;
+        this.indice = 0;
         this.proximoNo = null;
         this.anteriorNo = null;
     }
