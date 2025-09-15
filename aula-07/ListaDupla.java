@@ -23,12 +23,12 @@ public class ListaDupla<T> {
             primeiroNo = novoNo;
         }
 
-        atualizaIndice(); // Atualiza os índices após inserção
+        atualizaIndice(); 
         tamanho++;
     }
 
     public void atualizaIndice() {
-        NoDuplo<T> atual = primeiroNo; // Corrigido de noDuplo para NoDuplo
+        NoDuplo<T> atual = primeiroNo; 
         int indice = 0;
         while (atual != null) {
             atual.setIndice(indice);
@@ -49,7 +49,7 @@ public class ListaDupla<T> {
             ultimoNo = novoNo;
         }
 
-        atualizaIndice(); // Atualiza os índices após inserção
+        atualizaIndice();
         tamanho++;
     }
 
