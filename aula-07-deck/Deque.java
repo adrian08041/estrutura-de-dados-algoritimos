@@ -59,15 +59,15 @@ public class Deque<T> {
             System.out.println("Lista vazia!");
         }else{
             System.out.println("Dado: " + primeiroNo.getDado() + " removido!");
-            //T dadoTemp = primeiroNo.getDado();
+       
             primeiroNo = primeiroNo.getProximoNo();
             if(primeiroNo != null){
                 primeiroNo.setAnteriorNo(null);
+                atualizaIndice();
             }else{
                 ultimoNo = null;
             }
         }
-        atualizaIndice();
         tamanho--;
     }
 
