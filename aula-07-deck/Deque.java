@@ -27,6 +27,7 @@ public class Deque<T> {
         if (primeiroNo == null) {
             primeiroNo = novoNo;
             ultimoNo = novoNo;
+
         } else {
             novoNo.setProximoNo(primeiroNo);
             primeiroNo.setAnteriorNo(novoNo);
@@ -55,7 +56,7 @@ public class Deque<T> {
     
      public void removeInicio(){
         if(primeiroNo == null){
-            System.out.println("Listavazia!");
+            System.out.println("Lista vazia!");
         }else{
             System.out.println("Dado: " + primeiroNo.getDado() + " removido!");
             //T dadoTemp = primeiroNo.getDado();
